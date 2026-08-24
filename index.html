@@ -3305,8 +3305,15 @@ displayProducts();
 displayWishlist();
 
 updateCartCount();
-
 </script>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    const menu = document.getElementById("menu");
+    const button = document.querySelector(".navbar-toggler");
 
+    menu.classList.remove("show");
+    button.setAttribute("aria-expanded", "false");
+});
+</script>
 </body>
 </html>
