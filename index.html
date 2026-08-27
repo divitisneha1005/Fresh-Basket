@@ -463,6 +463,32 @@
         position:relative;
     }
 }
+        /* Mobile 3-line menu fix */
+@media (max-width: 991px) {
+
+    .navbar {
+        position: relative;
+        z-index: 1000;
+    }
+
+    .navbar-collapse {
+        background: white;
+        padding: 15px;
+        border-radius: 0 0 15px 15px;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+    }
+
+    .navbar-toggler {
+        border: 2px solid #198754;
+        border-radius: 10px;
+        padding: 8px 12px;
+    }
+
+    .navbar-toggler:focus {
+        box-shadow: none;
+    }
+
+}
 
     </style>
 </head>
