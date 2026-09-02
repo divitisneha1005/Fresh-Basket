@@ -502,93 +502,61 @@
 
     <div class="container">
 
-        <a class="navbar-brand text-success" href="#" onclick="showPage('home')">
-            <i class="bi bi-basket2-fill"></i>
-            Fresh Basket
+        <!-- Logo -->
+        <a class="navbar-brand text-success" href="#home">
+            My Website
         </a>
 
-    <button class="navbar-toggler"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#menu"
-        aria-controls="menu"
-        aria-expanded="false"
-        aria-label="Toggle navigation">
+        <!-- Three Dots Button -->
+        <button class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navLinks"
+                aria-controls="navLinks"
+                aria-expanded="false"
+                aria-label="Toggle navigation">
 
-    <span class="navbar-toggler-icon"></span>
+            ⋮
 
-    </button>
+        </button>
 
-        <div class="collapse navbar-collapse" id="menu">
+        <!-- Navbar Links -->
+        <div class="collapse navbar-collapse" id="navLinks">
 
             <ul class="navbar-nav mx-auto">
 
                 <li class="nav-item">
-                    <a class="nav-link" onclick="showPage('home')">
+                    <a class="nav-link" href="#home">
                         Home
                     </a>
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" onclick="showPage('products')">
+                    <a class="nav-link" href="#about">
+                        About
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#products">
                         Products
                     </a>
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" onclick="showPage('wishlist')">
-                        <i class="bi bi-heart"></i>
-                        Wishlist
-                    </a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" onclick="showPage('cart')">
-                        <i class="bi bi-cart3"></i>
-                        Cart
-                        <span id="cartCount"
-                              class="badge bg-success">0</span>
-                    </a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" onclick="showPage('orders')">
-                        Orders
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" onclick="showPage('payment')">
-                        payment
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" onclick="showPage('contact')">
-                        contact
+                    <a class="nav-link" href="#contact">
+                        Contact
                     </a>
                 </li>
 
             </ul>
-
-            <button class="btn btn-outline-success me-2"
-                    onclick="showPage('login')">
-
-                <i class="bi bi-person"></i>
-                Login
-
-            </button>
-
-            <button class="btn btn-success"
-                    onclick="showPage('register')">
-
-                Register
-
-            </button>
 
         </div>
 
     </div>
 
 </nav>
+
 
 
 <!-- =====================================================
