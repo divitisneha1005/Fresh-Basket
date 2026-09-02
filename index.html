@@ -503,49 +503,93 @@
     <div class="container">
 
         <!-- Logo -->
-        <a class="navbar-brand text-success" href="#home">
-            My Website
+        <a class="navbar-brand text-success"
+           href="#"
+           onclick="showPage('home')">
+            <i class="bi bi-basket2-fill"></i>
+            Fresh Basket
         </a>
 
         <!-- Three Dots Button -->
-        <button class="navbar-toggler border-0 p-1"
+<button class="navbar-toggler border-0 p-1"
         type="button"
         data-bs-toggle="collapse"
         data-bs-target="#menu"
         style="font-size: 22px;">
-        ⋮
-   </button>
+    ⋮
+</button>
 
-        <!-- Navbar Links -->
-        <div class="collapse navbar-collapse" id="navLinks">
+        <!-- All Navbar Elements -->
+        <div class="collapse navbar-collapse" id="menu">
 
             <ul class="navbar-nav mx-auto">
 
                 <li class="nav-item">
-                    <a class="nav-link" href="#home">
+                    <a class="nav-link" href="#"
+                       onclick="showPage('home')">
                         Home
                     </a>
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="#about">
-                        About
-                    </a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" href="#products">
+                    <a class="nav-link" href="#"
+                       onclick="showPage('products')">
                         Products
                     </a>
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="#contact">
+                    <a class="nav-link" href="#"
+                       onclick="showPage('wishlist')">
+                        <i class="bi bi-heart"></i>
+                        Wishlist
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#"
+                       onclick="showPage('cart')">
+                        <i class="bi bi-cart3"></i>
+                        Cart
+                        <span id="cartCount" class="badge bg-success">0</span>
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#"
+                       onclick="showPage('orders')">
+                        Orders
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#"
+                       onclick="showPage('payment')">
+                        Payment
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#"
+                       onclick="showPage('contact')">
                         Contact
                     </a>
                 </li>
 
             </ul>
+
+            <!-- Login -->
+            <button class="btn btn-outline-success me-2"
+                    onclick="showPage('login')">
+                <i class="bi bi-person"></i>
+                Login
+            </button>
+
+            <!-- Register -->
+            <button class="btn btn-success"
+                    onclick="showPage('register')">
+                Register
+            </button>
 
         </div>
 
